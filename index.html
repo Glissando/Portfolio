@@ -32,7 +32,7 @@
             <h1>JavaRPG</h1>
             <p> A simple turn based rpg developed for my intro to programming class, made entirely with the Java standard library.
                 As part of my requirements in developing the project I was required to display my understanding of OOP principles.
-                So abilities/skills are all extending from a skill base class with that defines a simple interface for them to be 
+                So abilities/skills are all extending from a skill base class with that define a simple interface for them to be 
                 given the enemy/player objects to operate on. Positions of characters are determined using an 8-bit bitmask. Key programming
                 concerns when developing this application were extending the gradient class and drawing operations my professor had given
                 me to work on any screen resolution.
@@ -44,12 +44,15 @@
             <image src="https://avatars3.githubusercontent.com/u/5283328?s=460&v=4" class="circle"></image>
             <h1>Gentry</h1>
             <p>A strategy game developed in Javascript using the Phaser framework. Gameplay loops consisted of dialogue segment that were
-                scripted using an extended version of the editor developed by <a href="https://github.com/etodd">Evan Todd</a>.
-                His editor only exported raw text due to him only needed to display simple text on the screen. My extensions primarily
-                consisted of adding new node definitions for audioclips/drawing sprites/utility. The graph was represented using an
+                scripted using an extended version of the node editor developed by <a href="https://github.com/etodd">Evan Todd</a>.
+                His editor and implementation only supported parsing raw text due to him only needed to display simple text on the screen for his project. 
+                My extensions primarily consisted of adding new node definitions for audioclips/drawing sprites/utility and implementing a functionality
+                for parsing mathematical expressesions and handling tasks such as substring coloring. The graph was represented using an
                 adjacency list so I needed to roll my own parser using REGEX for finding closed brackets, a FSM(Finite State Machine) 
-                for handling node states and then using my own recursive decent parser to handle mathematical expressions.
-                The rpg side of things was handled using a GOAP(Goal Oriented Action Planner) for enemies to choose their actions.
+                for handling node states and then using a recursive decent parser to handle the mathematical expressions.
+                The rpg side of things was handled using a GOAP(Goal Oriented Action Planner) for enemies to choose their actions and the
+                Command Queue design pattern for handling player actions. This means that each action chosen for a turn would be stored in Queue
+                and would then be performed as the queue was cleared.
             </p>
             <a href="https://github.com/Glissando/Gentry-Public"><i class="fab fa-github" id="icon"></i></a>
             <a href=""><i id="icon" class="fab fa-itch-io"></i></a>
@@ -83,7 +86,7 @@
             <image src="https://avatars3.githubusercontent.com/u/5283328?s=460&v=4" class="circle"></image>
             <h1>Algorithms Presentation</h1>
             <p>A presentation on algorithms given for a communications class. I chose to explain the concept of
-                iterative and greedy algorithms used an discrete distance optimization problem involving finding
+                iterative and greedy algorithms using a discrete distance optimization problem involving finding
                 the best spot to opening a lemonade stand and finding the smallest demonination of coins to hand
                     out to meet a specified amount.
             </p>
