@@ -1,0 +1,104 @@
+<html>
+    <header>
+        <title>Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://kit.fontawesome.com/e8f18fee1d.js" crossorigin="anonymous"></script>
+    </header>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#1"><i class="fas fa-music"></i></a></li>
+                <li><a href="#2"><i class="fas fa-gamepad"></i></a></li>
+                <li><a href="#3"><i class="fas fa-gamepad"></i></a></li>
+                <li><a href="#4"><i class="fas fa-gamepad"></i></a></li>
+                <li><a href="#5"><i class="fas fa-project-diagram"></i></a></li>
+                <li><a href="#6"><i class="fas fa-book"></i></a></li>
+                <li><a href="#7"><i class="fas fa-pen"></i></a></li>
+            </ul> 
+        </nav>
+        <div id="1" class="project">
+            <image src="https://avatars3.githubusercontent.com/u/5283328?s=460&v=4" class="circle"></image>
+            <h1>Euclidean Rhythms</h1>
+            <p>Developed an application in vanilla JS to generate Euclidean Rhythms as part of a presentation for my college's
+                STEM club. The application is drawn on a canvas and rendered through WebGL using Phaser. The sounds are played using Midi.js.
+                These rhythms are generated using the bjorklund algorithm developed by George Toussaint. A detailed explanation can be read 
+                in the outline I wrote for my presentation 
+                <a href="https://docs.google.com/document/d/1EOpM00WX4aKhFkPMN3FLBIgXymSNny3SWBP7LgxuryQ/edit">here.</a>
+            </p>
+            <a href="https://github.com/Glissando/EuclideanRhythm"><i class="fab fa-github" id="icon"></i></a>
+        </div>
+        <div id="2" class="project">
+            <image src="https://avatars3.githubusercontent.com/u/5283328?s=460&v=4" class="circle"></image>
+            <h1>JavaRPG</h1>
+            <p> A simple turn based rpg developed for my intro to programming class, made entirely with the Java standard library.
+                As part of my requirements in developing the project I was required to display my understanding of OOP principles.
+                So abilities/skills are all extending from a skill base class with that defines a simple interface for them to be 
+                given the enemy/player objects to operate on. Positions of characters are determined using an 8-bit bitmask. Key programming
+                concerns when developing this application were extending the gradient class and drawing operations my professor had given
+                me to work on any screen resolution.
+            </p>
+            <a href="https://github.com/Glissando/JavaRPG"><i class="fab fa-github" id="icon"></i></a>
+            <a href=""><i id="icon" class="fab fa-itch-io"></i></a>
+        </div>
+        <div id="3" class="project">
+            <image src="https://avatars3.githubusercontent.com/u/5283328?s=460&v=4" class="circle"></image>
+            <h1>Gentry</h1>
+            <p>A strategy game developed in Javascript using the Phaser framework. Gameplay loops consisted of dialogue segment that were
+                scripted using an extended version of the editor developed by <a href="https://github.com/etodd">Evan Todd</a>.
+                His editor only exported raw text due to him only needed to display simple text on the screen. My extensions primarily
+                consisted of adding new node definitions for audioclips/drawing sprites/utility. The graph was represented using an
+                adjacency list so I needed to roll my own parser using REGEX for finding closed brackets, a FSM(Finite State Machine) 
+                for handling node states and then using my own recursive decent parser to handle mathematical expressions.
+                The rpg side of things was handled using a GOAP(Goal Oriented Action Planner) for enemies to choose their actions.
+            </p>
+            <a href="https://github.com/Glissando/Gentry-Public"><i class="fab fa-github" id="icon"></i></a>
+            <a href=""><i id="icon" class="fab fa-itch-io"></i></a>
+        </div>
+        <div id="4" class="project">
+            <image src="https://avatars3.githubusercontent.com/u/5283328?s=460&v=4" class="circle"></image>
+            <h1>Staccato</h1>
+            <p>A simple 2D game engine developed using the Monoframework and C# language. Moonsharp was used to integrate Lua support.
+            </p>
+            <a href="https://github.com/Glissando/Staccato/tree/master/CrosswordSolver"><i class="fab fa-github" id="icon"></i></a>
+        </div>
+        <div id="5" class="project">
+            <image src="https://avatars3.githubusercontent.com/u/5283328?s=460&v=4" class="circle"></image>
+            <h1>Digivolution Graphs</h1>
+            <p>An application for analyzing digivolutions in digimon games. This tool was made for personal use in gameplays.
+                The data for this application is provided from a custom webscraper I developed in NodeJS.
+            </p>
+            <a href="https://github.com/Glissando/Digivolution-Graphs"><i class="fab fa-github" id="icon"></i></a>
+        </div>
+        <div id="6" class="project">
+            <image src="https://avatars3.githubusercontent.com/u/5283328?s=460&v=4" class="circle"></image>
+            <h1>Rotating Calipers</h1>
+            <p>An implementation of the Rotating Calipers algorithm which was initially made by Michael Shamos.
+                This was developed for my Data Structures & Algorithms Final project where we were tasked to choose
+                any algorithm and then implement and explain it. I chose to implement the Rotating Calipers due to my recent
+                interest in computational geomtry.
+            </p>
+            <a href="https://github.com/Glissando/Rotating-Calipers"><i class="fab fa-github" id="icon"></i></a>
+        </div>
+        <div id="7" class="project">
+            <image src="https://avatars3.githubusercontent.com/u/5283328?s=460&v=4" class="circle"></image>
+            <h1>Algorithms Presentation</h1>
+            <p>A presentation on algorithms given for a communications class. I chose to explain the concept of
+                iterative and greedy algorithms used an discrete distance optimization problem involving finding
+                the best spot to opening a lemonade stand and finding the smallest demonination of coins to hand
+                    out to meet a specified amount.
+            </p>
+            <a href="https://github.com/Glissando/Digivolution-Graphs"><i class="fab fa-github" id="icon"></i></a>
+        </div>
+        <footer>
+            <h1>Current Work</h1>
+            <p>I am currently developing a graphing calculator for visualizing dynamic algorithms using 
+                tropical geometry as part of my senior capstone, this is being developed using ReactJS
+                for the frontend interface and ThreeJS for rendering the polyhedra and tropical curves.
+                As a side project I am developing an Adventure game in the 
+                Godot Game engine that is an extension from my entry in the Yogscast game jam.
+            </p>
+            <a href="https://github.com/Glissando"><i class="fab fa-github" style="font-size: 25px;"></i></a>
+        </footer>
+    </body>
+    
+</html>
