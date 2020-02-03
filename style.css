@@ -15,7 +15,8 @@ p a {
     color: white;
     width: 80%;
     
-    margin-left: 125px;
+    margin-left: calc(20px + 10%);
+    margin-right: calc(10px + 5%);
     margin-top: 50px;
     border-radius: 10px;
     max-width: 1200px;
@@ -84,6 +85,7 @@ li:nth-child(1) {
 
 nav {
     position: fixed;
+    visibility: visible;
 }
 
 #icon {
@@ -145,3 +147,16 @@ footer p {
     -moz-animation:spin 4s linear infinite;
     animation:spin 4s linear infinite;
 }
+
+/* MOBILE */
+
+@media only screen and (max-width: 800px) {
+    nav {
+        visibility: hidden;
+    }
+
+    .project {
+        margin-left: calc(20px + 5%);
+        margin-right: calc(20px + 5%);
+    }
+  }
